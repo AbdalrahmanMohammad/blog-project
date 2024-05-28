@@ -15,6 +15,7 @@ header {
 
     & figure {
         margin-left: 100px;
+        /* logo height which also will define the header hight */
         height: 4rem;
         width: 200px;
 
@@ -35,4 +36,10 @@ header {
     & button {
         margin-left: auto;
     }
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    box-shadow: 0px -1px 10px 0px darkgrey;
 }
