@@ -8,6 +8,7 @@ body {
 }
 
 header {
+    margin-bottom: 20px;
     display: flex;
     background-color: white;
     align-items: center;
@@ -44,12 +45,38 @@ footer {
     justify-content: space-around;
     padding: 2rem;
     box-shadow: 0px -1px 10px 0px darkgrey;
+    margin-top: 20px;
 }
 
-main{
+main {
     margin: 0 8%;
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr ;
-    grid-auto-rows: minmax(200px,auto);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(250px, auto);
     gap: 5%;
+}
+
+.item-picture {
+    height: 100px;
+
+    & img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.item {
+    padding: 15px;
+    height: 100%;
+    width: 100%;
+
+    & figcaption {
+        overflow: hidden;
+        /* text-overflow: ellipsis; */
+        /* white-space: nowrap; */
+    }
+
+    &:hover {
+        box-shadow: 0px -1px 10px 0px darkgrey;
+    }
 }
