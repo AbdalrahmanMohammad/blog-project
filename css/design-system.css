@@ -1,1 +1,5 @@
 /* A file for the project design system */
+*{
+    margin: 0;
+    padding: 0;
+}

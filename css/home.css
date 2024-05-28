@@ -1,1 +1,38 @@
 /* A file for the css styles of home page */
+@import url("design-system.css");
+
+body {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+header {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0px 1px 10px 0px darkgrey;
+
+    & figure {
+        margin-left: 100px;
+        height: 4rem;
+        width: 200px;
+
+        & img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    & nav ul {
+        list-style: none;
+
+        & li {
+            display: inline-block;
+        }
+    }
+
+    & button {
+        margin-left: auto;
+    }
+}
