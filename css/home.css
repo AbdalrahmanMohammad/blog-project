@@ -1,68 +1,5 @@
 /* A file for the css styles of home page */
-@import url("design-system.css");
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-header {
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    display: flex;
-    background-color: white;
-    align-items: center;
-    justify-content: flex-start;
-    box-shadow: 0px 1px 10px 0px darkgrey;
-
-    & figure {
-        margin-left: 100px;
-        /* logo height which also will define the header hight */
-        height: 4rem;
-        width: 200px;
-
-        & img {
-            height: 100%;
-            width: 100%;
-        }
-        &:hover{
-            box-shadow: 0px -1px 10px 0px darkgrey;
-        }
-    }
-
-    & nav ul {
-        list-style: none;
-
-        & li {
-            display: inline-block;
-        }
-    }
-
-    & button {
-        margin-left: auto;
-    }
-
-    & a {
-        text-decoration: none;
-        padding: 5px 15px;
-        font-size: 1.5em;
-
-        &:hover{
-            background-color: #f1f1f1;
-            border-radius: 30px;
-        }
-    }
-}
-
-footer {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-    box-shadow: 0px -1px 10px 0px darkgrey;
-    margin-top: 20px;
-}
+@import url("core.css");
 
 main {
     padding-top: 6rem;
@@ -78,7 +15,7 @@ main {
         width: 25vw;
         min-height: 50vh;
         max-height: 65vh;
-        box-shadow: 0px -1px 10px 0px darkgrey;
+        box-shadow: 0px -1px 10px 0px var(--color-dark-grey);
         overflow: hidden;
 
         & .item-picture {

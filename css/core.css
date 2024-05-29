@@ -1,0 +1,86 @@
+/* A file for the project design system */
+/*  */
+/* font awesome cdn */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+:root {
+    /* main colors */
+    --color-primary: #052a80;
+    --color-secondary: #626c74;
+    --color-white: #FFF;
+    --color-dark-blue: #1E256A;
+    --color-black: #0f1113;
+    --color-dark-grey: #464b50;
+    --color-light-greay: #f1f1f1;
+
+
+    /* typography colors */
+    --color-link: var(--color-primary);
+    --color-link-hover-bg: var(--color-light-greay);
+
+
+    /* buttons colors */
+    --btn-primary-bg: var(--color-primary);
+    --btn-primary-hover: var(--color-secondary);
+
+
+    /* icons colors */
+    --color-icon-primary: var(--color-white);
+
+
+    /* Spaces */
+    --space-xs: 5px;
+    --space-s: 10px;
+    --space-m: 15px;
+    --space-l: 25px;
+    --space-xl: 40px;
+    --space-xxl: 70px;
+
+
+    /* Button Size */
+    --btn-font-size: 1rem;
+    --btn-sm: calc(var(--btn-font-size));
+    --btn-md: calc(var(--btn-font-size) + 0.2rem);
+    --btn-lg: calc(var(--btn-font-size) + 0.4rem);
+    --btn-radius: 2rem;
+}
+
+button {
+    margin-left: auto;
+    margin-right: 30px;
+    background-color: var(--btn-primary-bg);
+    color: var(--color-white);
+    border: 0;
+    padding: .5rem 1rem;
+    font-size: 1.3rem;
+    border-radius: var(--btn-radius);
+
+    &:hover {
+        background-color: var(--btn-primary-hover);
+    }
+
+}
+
+.btn-sm {
+    font-size: var(--btn-sm);
+}
+
+.btn-md {
+    font-size: var(--btn-md);
+}
+
+.btn-lg {
+    font-size: var(--btn-lg);
+}
