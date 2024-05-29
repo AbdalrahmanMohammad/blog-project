@@ -1,0 +1,49 @@
+@media (min-width: 500px) and (max-width: 750px) {
+    header {
+        justify-content: flex-end;
+
+        & figure {
+            display: none;
+        }
+        & nav{
+            flex-grow: 1;
+            padding-left: 10vw;
+        }
+    }
+    main{
+        & .item {
+            width: 40vw;
+        }
+    }
+}
+@media (max-width: 500px) {
+    header {
+        justify-content: flex-end;
+
+        & figure {
+            display: none;
+        }
+        & nav{
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+        & a{
+            font-size: 1em;
+            padding: 5px 0 5px 20px;
+        }
+    }
+    main{
+        & .item {
+            width: 85vw;
+            min-height: 40vh;
+            max-height: 60vh;
+        }
+    }
+    footer {
+        & .socialmedia-icons{
+            width: 35vw;
+
+        }
+    }
+}
