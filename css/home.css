@@ -27,6 +27,9 @@ header {
             height: 100%;
             width: 100%;
         }
+        &:hover{
+            box-shadow: 0px -1px 10px 0px darkgrey;
+        }
     }
 
     & nav ul {
@@ -39,6 +42,17 @@ header {
 
     & button {
         margin-left: auto;
+    }
+
+    & a {
+        text-decoration: none;
+        padding: 5px 15px;
+        font-size: 1.5em;
+
+        &:hover{
+            background-color: #f1f1f1;
+            border-radius: 30px;
+        }
     }
 }
 
@@ -80,6 +94,7 @@ main {
         & .item-description {
             height: 50%;
             overflow: hidden;
+
             & h4 {
                 padding-top: 10px;
                 padding-bottom: 20px;
