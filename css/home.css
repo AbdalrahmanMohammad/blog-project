@@ -1,7 +1,7 @@
 /* A file for the css styles of home page */
 @import url("core.css");
 
-main {
+main[class="home-main"] {
     padding-top: 6rem;
     margin: 0 7.5vw;
     width: 85vw;

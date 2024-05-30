@@ -1,3 +1,4 @@
+/* for devices between 500px-750px */
 @media (min-width: 500px) and (max-width: 750px) {
     header {
         justify-content: flex-end;
@@ -10,12 +11,13 @@
             padding-left: 10vw;
         }
     }
-    main{
+    main[class="home-main"]{
         & .item {
             width: 40vw;
         }
     }
 }
+/* for devices less than 500px */
 @media (max-width: 500px) {
     header {
         justify-content: flex-end;
@@ -33,7 +35,7 @@
             padding: 5px 0 5px 20px;
         }
     }
-    main{
+    main[class="home-main"]{
         & .item {
             width: 85vw;
             min-height: 40vh;
