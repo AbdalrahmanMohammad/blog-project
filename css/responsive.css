@@ -59,19 +59,24 @@
             flex-grow: 1;
             display: flex;
             justify-content: center;
+            margin-left: 7.5vw;
         }
 
         & a {
             font-size: 1em;
-            padding: 5px 0 5px 20px;
+            padding: 5px 10px;
         }
     }
 
     main[class="home-main"] {
+        gap: 7vw;
         & .item {
             width: 85vw;
             min-height: 40vh;
             max-height: 60vh;
+            &:hover {
+                transform: scale(1.03);
+            }
         }
     }
 
