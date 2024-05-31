@@ -6,17 +6,46 @@
         & figure {
             display: none;
         }
-        & nav{
+
+        & nav {
             flex-grow: 1;
             padding-left: 10vw;
         }
     }
-    main[class="home-main"]{
+
+    main[class="home-main"] {
         & .item {
             width: 40vw;
         }
     }
+
+    main[class=post-main] {
+        grid-template-areas: "article article article article" "aside aside aside aside";
+
+        & aside {
+            margin-top: 10px;
+            padding: 10px 20px;
+
+            & .author-identity {
+                & .author-photo {
+                    width: 10vw;
+                    height: 10vw;
+                    margin: 0.8vw 2vw;
+                }
+
+                & h4 {
+                    font-size: 4vw;
+                }
+
+                & h6 {
+                    font-size: 2vw;
+                }
+            }
+        }
+
+    }
 }
+
 /* for devices less than 500px */
 @media (max-width: 500px) {
     header {
@@ -25,27 +54,65 @@
         & figure {
             display: none;
         }
-        & nav{
+
+        & nav {
             flex-grow: 1;
             display: flex;
             justify-content: center;
         }
-        & a{
+
+        & a {
             font-size: 1em;
             padding: 5px 0 5px 20px;
         }
     }
-    main[class="home-main"]{
+
+    main[class="home-main"] {
         & .item {
             width: 85vw;
             min-height: 40vh;
             max-height: 60vh;
         }
     }
+
     footer {
-        & .socialmedia-icons{
+        & .socialmedia-icons {
             width: 35vw;
 
         }
+    }
+
+    main[class=post-main] {
+        grid-template-areas: "article article article article" "aside aside aside aside";
+
+        article figure h5 {
+            font-size: 1rem;
+        }
+
+        & aside {
+            margin-top: 10px;
+            padding: 1vw 2vw;
+
+            & .author-identity {
+                & .author-photo {
+                    width: 10vw;
+                    height: 10vw;
+                    margin-right: 3vw;
+                }
+
+                & h4 {
+                    font-size: 4vw;
+                }
+
+                & h6 {
+                    font-size: 2.4vw;
+                }
+            }
+
+            & .author-details {
+                font-size: 80%;
+            }
+        }
+
     }
 }
