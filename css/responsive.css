@@ -121,3 +121,12 @@
 
     }
 }
+
+/* that works along with the above media just if the width is less than 360px*/
+@media (max-width: 360px) {
+    header {
+        & a {
+            padding: 5px 2px;
+        }
+    }
+}
